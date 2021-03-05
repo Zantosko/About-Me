@@ -1,0 +1,260 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Slab", serif;
+}
+
+body {
+	background: url(img/cloud-5946381_1920.jpg) center center/cover;
+	height: 100vh;
+}
+
+.heading {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-bottom: 2rem;
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 2rem;
+	font-size: 3rem;
+	color: #fff;
+}
+
+.container {
+	padding-top: 9rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border: lightseagreen solid 2px;
+}
+
+.personal-pic {
+	width: 350px;
+	height: 50vh;
+	border-right: lightcoral solid 3px;
+}
+
+.info-box {
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	width: 550px;
+}
+
+@media (max-width: 500px) {
+	body {
+		background: url(img/cloud-5946381_1920.jpg) center center/cover no-repeat
+			fixed;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.heading {
+		width: 850px;
+	}
+
+	.grid {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		padding-left: 27rem;
+	}
+
+	.personal-pic {
+		border-right: none;
+		width: 500px;
+		height: 500px;
+	}
+
+	.info-box {
+		width: 500px;
+		height: 500px;
+		padding: 2rem;
+	}
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+	body {
+		background: url(img/cloud-5946381_1920.jpg) center center/cover no-repeat
+			fixed;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.heading {
+		width: 100%;
+	}
+
+	.grid {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: none;
+	}
+
+	.personal-pic {
+		border-right: none;
+		width: 500px;
+		height: 500px;
+	}
+
+	.info-box {
+		width: 500px;
+		height: 500px;
+		padding: 2rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+	body {
+		background: url(img/cloud-5946381_1920.jpg) center center/cover no-repeat
+			fixed;
+	}
+
+	.heading {
+		background-color: rgba(0, 0, 0, 0.6);
+		padding-bottom: 2rem;
+		border-radius: 10px;
+		width: 100%;
+	}
+
+	.container {
+		padding-top: 10rem;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		border: none;
+		height: 500px;
+		width: 100%;
+	}
+
+	.personal-pic {
+		width: 50vw;
+		height: 500px;
+		border-right: lightcoral solid 3px;
+	}
+
+	.info-box {
+		background: rgba(0, 0, 0, 0.6);
+		color: #fff;
+		font-size: 1rem;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		width: 50vw;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+	.personal-pic {
+		width: 450px;
+		height: 50vh;
+		border-right: lightcoral solid 3px;
+	}
+
+	.info-box {
+		padding-right: 4rem;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	body {
+		background: url(img/cloud-5946381_1920.jpg) center center/cover no-repeat
+			fixed;
+	}
+
+	.heading {
+		width: 100%;
+		text-align: center;
+	}
+
+	.container {
+		padding-top: 9rem;
+	}
+
+	.grid {
+		border: none;
+		max-width: 100%;
+	}
+
+	.personal-pic {
+		width: 50vw;
+		height: 50vh;
+		border-right: none;
+	}
+
+	.info-box {
+		flex-wrap: wrap;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1440px) and (max-width: 1679px) {
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		border: lightseagreen solid 2px;
+		height: 600px;
+	}
+
+	.personal-pic {
+		width: 50vw;
+		height: 600px;
+		border-right: lightcoral solid 3px;
+	}
+
+	.info-box {
+		background: rgba(0, 0, 0, 0.6);
+		color: #fff;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		width: 50vw;
+		height: 600px;
+	}
+}
+
+@media (min-width: 1680px) and (max-width: 1919px) {
+	.grid {
+		display: flex;
+		border: lightseagreen solid 2px;
+		height: 600px;
+	}
+
+	.personal-pic {
+		width: 30vw;
+		height: 600px;
+		border-right: lightcoral solid 3px;
+	}
+
+	.info-box {
+		background: rgba(0, 0, 0, 0.6);
+		color: #fff;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		width: 70vw;
+		height: 600px;
+	}
+}
